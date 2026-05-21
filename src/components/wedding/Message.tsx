@@ -31,7 +31,7 @@ export function Message() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="font-script text-4xl md:text-5xl text-gradient-sky mb-8"
+          className="font-script text-4xl md:text-5xl leading-[1.35] py-2 overflow-visible text-gradient-sky mb-8"
         >
           With love & blessings
         </motion.p>

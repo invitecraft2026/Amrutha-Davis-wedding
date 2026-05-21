@@ -11,8 +11,13 @@ export function Events() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="font-script text-4xl md:text-5xl text-gradient-sky">Celebrations</p>
-          <p className="mt-3 text-sm tracking-[0.4em] uppercase text-muted-foreground">Two days · One love</p>
+          <p className="font-script text-4xl md:text-5xl leading-[1.35] py-2 overflow-visible text-gradient-sky">
+            Celebrations
+          </p>
+
+          <p className="mt-3 text-sm tracking-[0.4em] uppercase text-muted-foreground">
+            Two days · One love
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-10">

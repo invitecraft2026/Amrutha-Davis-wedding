@@ -80,11 +80,13 @@ function Invitation() {
             <Particles count={20} color="oklch(0.7 0.13 225 / 0.6)" />
           </div>
           <Couple />
-          <Events />
           <Countdown />
           <ScratchReveal />
+          <Events />
+          
+          
           <Message />
-          <Gallery />
+          {/* <Gallery /> */}
           <Footer />
         </div>
       </main>

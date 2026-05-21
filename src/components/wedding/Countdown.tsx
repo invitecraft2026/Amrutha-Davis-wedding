@@ -35,11 +35,13 @@ export function Countdown() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-script text-4xl md:text-5xl text-gradient-sky mb-3"
+          className="font-script text-4xl md:text-5xl leading-[1.35] py-2 overflow-visible text-gradient-sky mb-3"
         >
           Counting the moments
         </motion.p>
-        <p className="text-sm tracking-[0.4em] uppercase text-muted-foreground mb-12">Until we say I do</p>
+        <p className="text-sm tracking-[0.4em] uppercase text-muted-foreground mb-12">
+          Until we say I do
+        </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {units.map((u, i) => (

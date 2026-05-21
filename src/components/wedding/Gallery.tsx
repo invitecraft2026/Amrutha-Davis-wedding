@@ -27,8 +27,12 @@ export function Gallery() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <p className="font-script text-4xl md:text-5xl text-gradient-sky">Our Moments</p>
-          <p className="mt-3 text-sm tracking-[0.4em] uppercase text-muted-foreground">A glimpse of forever</p>
+          <p className="font-script text-4xl md:text-5xl leading-[1.35] py-2 overflow-visible text-gradient-sky">
+            Our Moments
+          </p>
+          <p className="mt-3 text-sm tracking-[0.4em] uppercase text-muted-foreground">
+            A glimpse of forever
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[180px] gap-4">
@@ -43,10 +47,17 @@ export function Gallery() {
               onClick={() => setOpen(src)}
               className={`relative overflow-hidden rounded-2xl group glass ${sizes[i]}`}
             >
-              <img src={src} alt="" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+              <img
+                src={src}
+                alt=""
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                loading="lazy"
+              />
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity"
-                style={{ background: "linear-gradient(180deg, transparent, oklch(0.35 0.13 240 / 0.5))" }}
+                style={{
+                  background: "linear-gradient(180deg, transparent, oklch(0.35 0.13 240 / 0.5))",
+                }}
               />
             </motion.button>
           ))}

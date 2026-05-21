@@ -61,25 +61,38 @@ export function OpeningSeal({ onOpen }: { onOpen: () => void }) {
 
           {/* Seal */}
           <div
-            className="relative h-48 w-48 md:h-64 md:w-64 rounded-full flex items-center justify-center animate-pulse-glow"
-            style={{
-              background: "radial-gradient(circle at 30% 30%, oklch(0.7 0.13 225), oklch(0.35 0.13 240) 70%, oklch(0.25 0.1 245))",
-              boxShadow: "var(--shadow-seal)",
-            }}
-          >
-            <div
-              className="absolute inset-3 rounded-full border-2"
-              style={{ borderColor: "oklch(1 0 0 / 0.35)", borderStyle: "dashed" }}
-            />
-            <div className="text-center">
-              <div className="font-script text-6xl md:text-7xl text-white drop-shadow-lg leading-none">
-                A <span className="text-3xl md:text-4xl align-middle opacity-80">&</span> D
-              </div>
-              <div className="mt-2 text-[10px] md:text-xs tracking-[0.3em] text-white/80 uppercase">Forever</div>
-            </div>
-            {/* Shimmer */}
-            <span className="absolute inset-0 rounded-full shimmer opacity-50 mix-blend-overlay" />
-          </div>
+  className="relative h-32 w-32 md:h-44 md:w-44 rounded-full flex items-center justify-center animate-pulse-glow"
+  style={{
+    background:
+      "radial-gradient(circle at 30% 30%, oklch(0.7 0.13 225), oklch(0.35 0.13 240) 70%, oklch(0.25 0.1 245))",
+    boxShadow: "var(--shadow-seal)",
+  }}
+>
+  <div
+    className="absolute inset-2 rounded-full border-2"
+    style={{
+      borderColor: "oklch(1 0 0 / 0.35)",
+      borderStyle: "dashed",
+    }}
+  />
+
+  <div className="text-center">
+    <div className="font-script text-4xl md:text-5xl text-white drop-shadow-lg leading-none">
+      A{" "}
+      <span className="text-2xl md:text-3xl align-middle opacity-80">
+        &
+      </span>{" "}
+      D
+    </div>
+
+    <div className="mt-1 text-[8px] md:text-[10px] tracking-[0.25em] text-white/80 uppercase">
+      Forever
+    </div>
+  </div>
+
+  {/* Shimmer */}
+  <span className="absolute inset-0 rounded-full shimmer opacity-50 mix-blend-overlay" />
+</div>
         </motion.button>
 
         <motion.p

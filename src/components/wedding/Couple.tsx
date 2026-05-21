@@ -16,8 +16,16 @@ export function Couple() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="font-script text-4xl md:text-5xl text-gradient-sky">The Beloved</p>
-          <div className="mx-auto mt-4 h-px w-32" style={{ background: "linear-gradient(90deg, transparent, var(--sky-mid), transparent)" }} />
+          <p className="font-script text-4xl md:text-5xl leading-[1.3] py-2 text-gradient-sky">
+            The Beloved
+          </p>
+
+          <div
+            className="mx-auto mt-4 h-px w-32"
+            style={{
+              background: "linear-gradient(90deg, transparent, var(--sky-mid), transparent)",
+            }}
+          />
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center relative">
@@ -30,7 +38,9 @@ export function Couple() {
             className="glass rounded-3xl p-10 text-center"
           >
             <p className="font-script text-3xl text-gradient-sky mb-2">The Bride</p>
-            <h3 className="font-display text-4xl md:text-5xl font-light text-foreground mb-4">Amrutha Cyriac</h3>
+            <h3 className="font-display text-4xl md:text-5xl font-light text-foreground mb-4">
+              Amrutha Cyriac
+            </h3>
             <div className="mx-auto h-px w-20 mb-4" style={{ background: "var(--sky-mid)" }} />
             <p className="text-muted-foreground italic">D/o Rani Cyriac & Cyriac Thomas</p>
             <p className="text-muted-foreground">Kiliroor, Changanassery</p>
@@ -55,7 +65,9 @@ export function Couple() {
             className="glass rounded-3xl p-10 text-center"
           >
             <p className="font-script text-3xl text-gradient-sky mb-2">The Groom</p>
-            <h3 className="font-display text-4xl md:text-5xl font-light text-foreground mb-4">Davis Shaji George</h3>
+            <h3 className="font-display text-4xl md:text-5xl font-light text-foreground mb-4">
+              Davis Shaji George
+            </h3>
             <div className="mx-auto h-px w-20 mb-4" style={{ background: "var(--sky-mid)" }} />
             <p className="text-muted-foreground italic">S/o Shaji George & Valsamma Shaji</p>
             <p className="text-muted-foreground">Vavalankal, Aruvithura</p>

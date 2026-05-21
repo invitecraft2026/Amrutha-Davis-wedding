@@ -35,7 +35,9 @@ export function EventCard({ title, date, time, venue, reception, mapUrl, delay =
         <Church className="h-9 w-9" />
       </motion.div>
 
-      <h3 className="font-script text-4xl md:text-5xl text-gradient-sky mb-2">{title}</h3>
+      <h3 className="font-script text-4xl md:text-5xl leading-[1.35] py-2 overflow-visible text-gradient-sky mb-2">
+  {title}
+</h3>
       <div className="mx-auto h-px w-24 my-5" style={{ background: "linear-gradient(90deg, transparent, var(--sky-mid), transparent)" }} />
 
       <div className="space-y-4 text-foreground/90 font-display text-lg">
