@@ -32,7 +32,7 @@ export function Events() {
           <EventCard
             title="Wedding Ceremony"
             date="October 24th, 2026"
-            time="6:00 PM"
+            time="11:00 AM"
             venue="St. George Forane Church, Aruvithura, Erattupetta"
             reception="Reception to follow in Parish Hall"
             mapUrl="https://www.google.com/maps/search/?api=1&query=St.+George+Forane+Church+Aruvithura"
