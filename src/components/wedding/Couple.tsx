@@ -69,8 +69,8 @@ export function Couple() {
               Davis Shaji George
             </h3>
             <div className="mx-auto h-px w-20 mb-4" style={{ background: "var(--sky-mid)" }} />
-            <p className="text-muted-foreground italic">S/o Shaji George & Valsamma Shaji</p>
-            <p className="text-muted-foreground">Vavalankal, Aruvithura</p>
+            <p className="text-muted-foreground italic">S/o  Valsamma Shaji & Shaji George</p>
+            <p className="text-muted-foreground">Vavalankal, Perunilam, Poonjar</p>
           </motion.div>
         </div>
       </div>

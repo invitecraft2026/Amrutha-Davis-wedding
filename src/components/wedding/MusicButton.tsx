@@ -24,7 +24,7 @@ export function MusicButton({ autoplay }: { autoplay: boolean }) {
       <audio
         ref={ref}
         loop
-        src="https://cdn.pixabay.com/audio/2022/10/18/audio_31c3a8e2cf.mp3"
+        src="/song.mpeg"
       />
       <motion.button
         onClick={toggle}

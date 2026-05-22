@@ -240,7 +240,7 @@ export function ScratchReveal() {
           className="mt-16"
         >
           <p className="text-lg md:text-2xl tracking-[0.2em] uppercase text-sky-900/70">
-            6:00 PM
+            11:00 AM
           </p>
 
           <p className="mt-4 font-script text-3xl md:text-5xl leading-[1.35] py-2 text-gradient-sky">
