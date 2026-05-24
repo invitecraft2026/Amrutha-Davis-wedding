@@ -43,9 +43,7 @@ function ScratchCircle({ value, label, delay = 0 }: ScratchCircleProps) {
 
       // Watercolor blobs
       for (let i = 0; i < 10; i++) {
-        ctx.fillStyle = `rgba(255,255,255,${
-          0.08 + Math.random() * 0.18
-        })`;
+        ctx.fillStyle = `rgba(255,255,255,${0.08 + Math.random() * 0.18})`;
 
         ctx.beginPath();
 
@@ -54,7 +52,7 @@ function ScratchCircle({ value, label, delay = 0 }: ScratchCircleProps) {
           Math.random() * size,
           20 + Math.random() * 40,
           0,
-          Math.PI * 2
+          Math.PI * 2,
         );
 
         ctx.fill();
@@ -163,17 +161,11 @@ function ScratchCircle({ value, label, delay = 0 }: ScratchCircleProps) {
         <div className="absolute inset-0 flex flex-col items-center justify-center">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
-            animate={
-              revealed
-                ? { scale: 1, opacity: 1 }
-                : { scale: 0.8, opacity: 0 }
-            }
+            animate={revealed ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <p className="font-display text-3xl md:text-5xl text-gradient-sky">
-              {value}
-            </p>
+            <p className="font-display text-3xl md:text-5xl text-gradient-sky">{value}</p>
 
             <p className="mt-1 text-[10px] md:text-xs uppercase tracking-[0.3em] text-muted-foreground">
               {label}
@@ -239,17 +231,12 @@ export function ScratchReveal() {
           transition={{ delay: 0.7 }}
           className="mt-16"
         >
-          <p className="text-lg md:text-2xl tracking-[0.2em] uppercase text-sky-900/70">
-            11:00 AM
-          </p>
-
+          <p className="text-lg md:text-2xl tracking-[0.2em] uppercase text-sky-900/70">11:00 AM</p>
           <p className="mt-4 font-script text-3xl md:text-5xl leading-[1.35] py-2 text-gradient-sky">
             St. George Forane Church
           </p>
 
-          <p className="mt-2 text-sm md:text-base italic text-muted-foreground">
-            Aruvithura, Erattupetta
-          </p>
+          <p className="mt-2 text-sm md:text-base italic text-muted-foreground">Aruvithura</p>
         </motion.div>
       </div>
     </section>
